@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Merry Snow</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" >
+
+	<meta name="author" content="Mamboleoo" />
+	<meta name="description" content="WebGl experiment using Pixi.js where you can create your own wish card !" />
+</head>
+
+<body>
+	<!-- Welcome modal -->
+	<section class="welcome">
+		<div class="overlay"></div>
+		<div class="content">
+			<h1>Merry Snow</h1>
+			<p>
+				Welcome to Merry Snow, an unbelievable experiment which allows you to send interactive postcards !
+			</p>
+			<a href="#" id="hideWelcome">Let's get started !</a>
+		</div>
+	</section>
+	<!-- End Welcome modal -->
+
+	<div id="background"></div>
+	<!-- <input type="file" id="fileUpload"> -->
+
+	<!-- Github -->
+	<a href="https://github.com/Mamboleoo/Merry-Snow" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
+
+	<!-- Save button -->
+	<div id="save">
+			<span id="saveCard">
+				Share your card !
+			</span>
+			<div class="links">
+				<span id="getLink">
+					With a link ?  
+				</span>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="#" data-text="Take+a+look+at+my+awesome+interactive+greeting+card+!" data-size="large" data-hashtags="merrySnow">Tweet</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Create card -->
+	<div id="create">
+		<a href="http://merrysnow.cards/">
+			Create your own card !
+		</a>
+	</div>
+
+	<!-- Loader -->
+	<div id="loader"></div>
+
+	<!-- Copyright -->
+	<span id="copyright">
+		Made in Belgium by <a target="_blank" href="https://twitter.com/Mamboleoo">Mamboleoo</a>
+	</span>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-57238900-1', 'auto');
+		ga('send', 'pageview', {
+ 			'page': location.pathname + location.search  + location.hash
+		});
+	</script>
+	<script type="text/javascript" src="js/libs/dat.gui.min.js"></script>
+	<script type="text/javascript" src="js/libs/pixi.js"></script>
+	<script type="text/javascript" src="js/global.js"></script>
+	<script type="text/javascript" src="js/scene.js"></script>
+
+</body>
+</html>
